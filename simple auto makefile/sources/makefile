@@ -2,17 +2,17 @@
 
 CXXFLAGS = -Wall -s -O2 
 
-all: sources/main
+all: main
 clean:
 	rm -f *.o
 cleanall: clean
-	rm -f sources/main
+	rm -f main
 rebuild: clean all
 debug: all
-	./sources/main
+	./main
 
-sources/main: main.o
+main: main.o
 	$(CXX) $(CXXFLAGS) -o $@ $^
-main.o: sources/main.cpp
+main.o: main.cpp
 	$(CXX) $(CXXFLAGS) -c -o $@ $<
 

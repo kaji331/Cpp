@@ -4,7 +4,7 @@
 # Written by eXerigumo Clanjor
  
 # CUSTOMIZE
-MAIN="sources/main"
+MAIN="main"
 
 # 需要安装opengl库freeglut3-dev
 # LIBS="-lglut -lGL -lGLU"
